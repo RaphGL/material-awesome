@@ -11,12 +11,12 @@ configuration {
 }
 
 * {
-	background-color:            rgb(18, 30, 37);
-	text-color:                  #d3d7cf;
-	selbg:                       rgb(0, 86, 136);
-	actbg:                       rgb(22, 37, 46);
+	background-color:            #1c1d26;
+	text-color:                  #f8f8f2;
+	selbg:                       #6272a4;
+	actbg:                       #44475a;
 	urgbg:                       #e53935;
-	winbg:			     #26c6da;
+	winbg:			     #f8f8f2;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
@@ -39,7 +39,7 @@ configuration {
 	hide-scrollbar:              "true";
 	margin:                      0px;
 	padding:                     0px;
-	font:            "Roboto medium 10";
+	font:            "Ubuntu Regular 12";
 }
 
 window {

@@ -5,32 +5,32 @@ local icons = require('theme.icons')
 local tags = {
   {
     icon = icons.chrome,
-    type = 'chrome',
-    defaultApp = 'google-chrome-beta',
+    type = 'internet',
+    defaultApp = 'firefox',
     screen = 1
   },
   {
     icon = icons.code,
     type = 'code',
-    defaultApp = 'code',
+    defaultApp = 'terminal',
     screen = 1
   },
   {
     icon = icons.social,
     type = 'social',
-    defaultApp = 'station',
+    defaultApp = 'telegram-desktop',
     screen = 1
   },
   {
     icon = icons.folder,
     type = 'files',
-    defaultApp = 'nautilus',
+    defaultApp = 'nemo',
     screen = 1
   },
   {
     icon = icons.music,
     type = 'music',
-    defaultApp = 'youtube-music',
+    defaultApp = 'kitty cmus',
     screen = 1
   },
   {
