@@ -12,8 +12,8 @@ local globalKeys =
   -- Hotkeys
   awful.key({modkey}, 'F10', hotkeys_popup.show_help, {description = 'show help', group = 'awesome'}),
   -- Tag browsing
-  awful.key({modkey, 'Control'}, 'k', awful.tag.viewprev, {description = 'view previous', group = 'workspaces'}),
-  awful.key({modkey, 'Control'}, 'j', awful.tag.viewnext, {description = 'view next', group = 'workspaces'}),
+  awful.key({modkey}, 'k', awful.tag.viewprev, {description = 'view previous workspace', group = 'workspaces'}),
+  awful.key({modkey}, 'j', awful.tag.viewnext, {description = 'view next workspace', group = 'workspaces'}),
   awful.key({modkey}, 'Escape', awful.tag.history.restore, {description = 'go back', group = 'workspaces'}),
   -- Default client focus
   awful.key(
@@ -138,12 +138,52 @@ local globalKeys =
     {description = 'Take screenshot selecting area', group = 'awesome'}
   ),
   awful.key(
-    {modkey, 'Shift'},
+    {modkey, 'Control'},
     'x',
     function()
       awful.spawn('xdotool getwindowfocus windowkill')
     end,
     {description = 'Kill active window process', group = 'awesome'}
+  ),
+  awful.key(
+    {modkey},
+    'p',
+    function()
+      awful.spawn('cmus-remote -u')
+    end,
+    {description = 'Kill active window process', group = 'hotkeys'}
+  ),
+  awful.key(
+    {modkey},
+    ',',
+    function()
+      awful.spawn('cmus-remote --prev')
+    end,
+    {description = 'Play previous song', group = 'hotkeys'}
+  ),
+  awful.key(
+    {modkey},
+    '.',
+    function()
+      awful.spawn('cmus-remote --next')
+    end,
+    {description = 'Play next song', group = 'hotkeys'}
+  ),
+  awful.key(
+    {modkey, 'Control'},
+    ',',
+    function()
+      awful.spawn('cmus-remote -C "seek -2"')
+    end,
+    {description = 'Rewind song', group = 'hotkeys'}
+  ),
+  awful.key(
+    {modkey, 'Control'},
+    '.',
+    function()
+      awful.spawn('cmus-remote -C "seek +2"')
+    end,
+    {description = 'Forward song', group = 'hotkeys'}
   ),
   -- Standard program
   awful.key(
@@ -174,7 +214,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey, 'Shift'},
-    'h',
+    'l',
     function()
       awful.tag.incnmaster(1, nil, true)
     end,
@@ -182,7 +222,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey, 'Shift'},
-    'l',
+    'h',
     function()
       awful.tag.incnmaster(-1, nil, true)
     end,
@@ -190,7 +230,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey, 'Control'},
-    'h',
+    'l',
     function()
       awful.tag.incncol(1, nil, true)
     end,
@@ -198,7 +238,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey, 'Control'},
-    'l',
+    'h',
     function()
       awful.tag.incncol(-1, nil, true)
     end,
@@ -240,7 +280,7 @@ local globalKeys =
     function()
       _G.toggle_quake()
     end,
-    {description = 'dropdown application', group = 'launcher'}
+    {description = 'dropdown terminal', group = 'launcher'}
   ),
   -- Widgets popups
   awful.key(

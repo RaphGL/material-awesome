@@ -13,15 +13,14 @@ return {
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
-    'picom --config' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf',
+    'feh --bg-fill ~/dotfiles/wallpapers/Pictures/Wallpapers/wallpaper5.jpg', -- Set wallpaper
+    'picom --config ~/.config/awesome/configuration/picom.conf',
+    'lxpolkit',
     'blueberry-tray', -- Bluetooth tray icon
     'xfce4-power-manager', -- Power manager
-    'lxpolkit',
-    'setxkbmap -option caps:swapescape',
-    'flameshot',
-    'dunst',
+    'setxkbmap -option caps:swapescape', -- Swap Caps Lock and Escape
+    'flameshot', -- Screenshot utility
     'sh -c ~/dotfiles/.scripts/cmus_daemon.sh',
-    'feh --bg-fill ~/dotfiles/wallpapers/Pictures/Wallpapers/wallpaper5.jpg',
     "xautolock -time 10 -locker 'i3lock -i ~/Pictures/Wallpapers/lockscreen.png' -killer 'systemctl suspend' -killtime 10",
   }
 }

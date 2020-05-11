@@ -1,6 +1,6 @@
-## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/) 
+## Material and Mouse driven theme for [AwesomeWM](https://awesomewm.org/) 
 
-An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
+Almost a desktop environment, made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opinionated mouse/keyboard workflow to increase daily productivity and comfort.
 
 [![](./theme/PapyElGringo-theme/demo.gif?raw=true)](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)
 *[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)*
@@ -15,35 +15,31 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 
 ### 1) Get all the dependencies
 - [AwesomeWM](https://awesomewm.org/) as the window manager
-- [Roboto](https://fonts.google.com/specimen/Roboto) as the **font**
+- [Ubuntu](https://fonts.google.com/specimen/Ubuntu) as the **font**
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher
-- [Compton fork](https://github.com/tryone144/compton) for the compositor (blur and animations)
-- (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme
-- (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme
+- [Picom](https://github.com/tryone144/compton) for the compositor (blur and animations)
+- [lxpolkit](https://flameshot.js.org/) for granting root privilege to GUI applications
+- (Optional) [Qogir](https://www.gnome-look.org/p/1230631/) as GTK theme
+- (Optional) [Breeze Dark](https://github.com/KDE/breeze-icons) as icon theme
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
+- (Optional) [Flameshot](https://flameshot.js.org/) for screenshots
 
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
-```
-
-> Awesome 4.3 is so new that most of the distribution didn't updated yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch
-
-```
-git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
+git clone https://github.com/RaphGL/material-awesome.git ~/.config/awesome
 ```
 
 ### 3) Set the themes
-Start **lxappearance** to active the **icon** theme and **GTK** theme
+Start **lxappearance** to activate the **icon** and **GTK** themes
 
 ### 4) Read the documentation
-The documentation live within the source code.
+The documentation lives within the source code.
 
-The project is split in functional directories and in each of them there is a readme where you can get additionnal informations about the them.
+The project is split in functional directories and in each of them there is a readme where you can get additional information about them.
 
 * [Configuration](./configuration) is about all the **settings** available
-* [Layout](./layout) hold the **disposition** of all the widgets
-* [Module](./module) contain all the **features** available
-* [Theme](./theme) hold all the **aestetic** aspects
-* [Widget](./widget) contain all the **widgets** available
+* [Layout](./layout) has the **layout** of all the widgets
+* [Module](./module) contains all of the **features** available
+* [Theme](./theme) has all of the **aesthetics**
+* [Widget](./widget) contains all of the **widgets** available

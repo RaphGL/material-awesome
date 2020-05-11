@@ -91,7 +91,7 @@ element {
 entry {
 	expand:         true;
 	text-color:     @normal-foreground;
-	background-color: rgb(25, 41, 51);
+	background-color: rgb(40, 42, 54);
 	vertical-align: 1;
 	padding:        12px;
 	font:            "Roboto medium 13";
